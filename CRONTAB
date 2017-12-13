@@ -1,0 +1,7 @@
+
+# For desktop machines
+*/1 * * * * export DISPLAY=:0 && /PATH/minergate-tools/run_on_desktop.sh <email>
+
+# For servers
+*/1 * * * * /PATH/minergate-tools/run_on_desktop.sh <email>
+
