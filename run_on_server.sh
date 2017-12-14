@@ -13,7 +13,7 @@ CORES=`nproc`
 CORES_OFFSET=1
 CORES_MINER=3
 PID_FILE=/tmp/minergate_script.pid
-CORES_USED=`uptime | cut -d':' -f5 | cut -d',' -f1`
+CORES_USED=`uptime  | grep -oP '(?<=average:) [0-9]'`
 
 
 if ! test -f $PID_FILE
